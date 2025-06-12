@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.booklist {
+  background-color: rgb(255, 191, 201);
+  width: 80%;
+  margin: 4rem auto;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.book {
+  background-color: white;
+  min-width: 20%;
+  max-width: 300px;
+  text-align: center;
+  margin: 0.5rem;
+  padding: 2rem;
+  display: inline-block;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.book img {
+  width: 100%;
+  max-width: 20rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .booklist {
+
+  }
+}

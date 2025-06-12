@@ -32,8 +32,36 @@
   max-width: 20rem;
 }
 
-@media screen and (min-width: 1000px) {
-  .booklist {
+h1 {
+  padding: 1rem 0;
+}
 
+h2 {
+  font-size: small;
+}
+
+@media screen and (max-width: 512px) {
+  .booklist {
+    padding: 3rem 0;
+  }
+
+  .book {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .book {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    padding-top: 1rem;
+    font-size: 18px;
+    font-weight: 600;
   }
 }

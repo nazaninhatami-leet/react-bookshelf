@@ -27,10 +27,14 @@ const BookImg = () => {
     />
   );
 };
-const BookName = () => <h1>The Let Them Theory: A Life-Changing Tool</h1>;
+
+const bookNameValue = 'The Let Them Theory: A Life-Changing Tool';
+const BookName = () => <h1>{bookNameValue}</h1>;
+
 const BookAuthor = () => {
-  const bookAuthor = { color: '#8d3592', letterSpacing: '0.1rem' };
-  return <h2 style={bookAuthor}>Mel Robbins</h2>;
+  const bookAuthorValue = 'Mel Robbins';
+  const bookAuthorStyles = { color: '#8d3592', letterSpacing: '0.1rem' };
+  return <h2 style={bookAuthorStyles}>{bookAuthorValue}</h2>;
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

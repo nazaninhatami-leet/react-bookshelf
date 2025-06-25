@@ -39,16 +39,13 @@ const BookList = () => (
   </section>
 );
 
-function Book(props) {
+function Book({ bookAuthor, bookName, bookImg }) {
+  // const { bookAuthor, bookName, bookImg } = props;
   return (
     <div className="book">
-      <img
-        // src="https://images-na.ssl-images-amazon.com/images/I/91ZVf3kNrcL._AC_UL600_SR600,400_.jpg"
-        src={props.bookImg}
-        alt={props.bookName}
-      />
-      <h1>{props.bookName}</h1>
-      <h2>{props.bookAuthor}</h2>
+      <img src={bookImg} alt={bookName} />
+      <h1>{bookName}</h1>
+      <h2>{bookAuthor}</h2>
     </div>
   );
 }

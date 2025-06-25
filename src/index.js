@@ -25,7 +25,9 @@ const BookList = () => (
       bookName={firstBook.name}
       bookAuthor={firstBook.author}
       bookImg={firstBook.img}
-    />
+    >
+      <p style={{ color: 'red', marginTop: '2.6rem' }}>25% OFF</p>
+    </Book>
     <Book
       bookName={secondBook.name}
       bookAuthor={secondBook.author}
@@ -39,13 +41,14 @@ const BookList = () => (
   </section>
 );
 
-function Book({ bookAuthor, bookName, bookImg }) {
+function Book({ bookAuthor, bookName, bookImg, children }) {
   // const { bookAuthor, bookName, bookImg } = props;
   return (
     <div className="book">
       <img src={bookImg} alt={bookName} />
       <h1>{bookName}</h1>
       <h2>{bookAuthor}</h2>
+      {children}
     </div>
   );
 }

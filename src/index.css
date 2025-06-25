@@ -11,20 +11,23 @@
   padding: 3rem 2rem;
   text-align: center;
   border-radius: 6px;
+  height: 80%;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 .book {
   background-color: white;
   min-width: 20%;
-  max-width: 300px;
+  width: 300px;
   text-align: center;
   margin: 0.5rem;
   padding: 2rem;
   display: inline-block;
-  height: 400px;
+  min-height: 50%;
+  height: 22rem;
   border-radius: 10px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  overflow: auto;
 }
 
 .book img {
@@ -38,6 +41,8 @@ h1 {
 
 h2 {
   font-size: small;
+  letter-spacing: '0.1rem';
+  color: '#8d3592';
 }
 
 @media screen and (max-width: 512px) {
@@ -63,5 +68,66 @@ h2 {
     padding-top: 1rem;
     font-size: 18px;
     font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 2040px) {
+  .book {
+    height: 24rem;
+  }
+
+  .book img {
+    max-width: 30rem;
+  }
+
+  h1 {
+    font-size: 30px;
+    padding-top: 2rem;
+  }
+
+  h2 {
+    padding-top: 1rem;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 2700px) {
+  .book {
+    height: 30rem;
+  }
+}
+
+@media screen and (min-width: 2800px) {
+  .book {
+    height: 44rem;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding-top: 3rem;
+  }
+
+  h2 {
+    padding-top: 2rem;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 2800px) {
+  .book {
+    height: 56rem;
+  }
+
+  h1 {
+    font-size: 64px;
+    padding-top: 4rem;
+  }
+
+  h2 {
+    padding-top: 2rem;
+    font-size: 50px;
+    font-weight: bold;
   }
 }

@@ -5,13 +5,13 @@
 }
 
 .booklist {
-  background-color: rgb(255, 205, 212);
+  background-color: rgb(255, 220, 224);
   width: 80%;
-  margin: 4rem auto;
-  padding: 3rem 2rem;
+  margin: 3rem auto;
+  padding: 1.4rem 2rem;
   text-align: center;
   border-radius: 8px;
-  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 8px 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .book {

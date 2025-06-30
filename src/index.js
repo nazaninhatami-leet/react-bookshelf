@@ -20,26 +20,30 @@ const books = [
     img: 'images/goIran.jpg',
     id: 3,
   },
-  {
-    title: 'Alice in Wonderland',
-    author: 'Some Human',
-    img: 'logo512.png',
-    id: 4,
-  },
+  // {
+  //   title: 'Alice in Wonderland',
+  //   author: 'Some Human',
+  //   img: 'logo512.png',
+  //   id: 4,
+  // },
 ];
 
 const BookList = () => (
   <section className="booklist">
     {books.map((book) => {
-      const { title, author, img, id } = book;
-      console.log(book);
-      return <Book title={title} author={author} img={img} key={id} />;
+      // const { title, author, img, id } = book;
+      return (
+        // <Book book={book} key={book.id}
+        <Book {...book} key={book.id}>
+          <p style={{ color: 'red', marginTop: '50px' }}>25% off</p>
+        </Book>
+      );
     })}
   </section>
 );
 
+// function Book({book: { author, title, img }, children}) {
 function Book({ author, title, img, children }) {
-  // const { bookAuthor, bookName, bookImg } = props;
   return (
     <div className="book">
       <img src={img} alt={title} />

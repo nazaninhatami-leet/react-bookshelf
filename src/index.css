@@ -9,11 +9,17 @@ body {
   background-color: #222;
 }
 
+.heading {
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 1.6rem;
+}
+
 .booklist {
   background-color: #503838;
   width: 80%;
-  margin: 4.5rem auto;
-  padding: 3rem 2rem;
+  margin: 1.6rem auto;
+  padding: 2.8rem 2rem;
   text-align: center;
   border-radius: 8px;
   box-shadow: 8px 4px 20px rgba(0, 0, 0, 0.3);
@@ -50,14 +56,14 @@ body {
   height: 11rem;
 }
 
-h1 {
+.title {
   padding: 1.1rem 0;
 }
 
-h2 {
+.author {
   font-size: 1rem;
   letter-spacing: '0.1rem';
-  color: '#8d3592';
+  color: '#503838';
 }
 
 @media screen and (max-width: 512px) {
@@ -75,11 +81,11 @@ h2 {
     width: 80%;
   }
 
-  h1 {
+  .title {
     font-size: 26px;
   }
 
-  h2 {
+  .author {
     padding-top: 1rem;
     font-size: 18px;
     font-weight: 600;
@@ -95,12 +101,12 @@ h2 {
     max-width: 30rem;
   }
 
-  h1 {
+  .title {
     font-size: 30px;
     padding-top: 2rem;
   }
 
-  h2 {
+  .author {
     padding-top: 1rem;
     font-size: 20px;
     font-weight: bold;
@@ -118,12 +124,12 @@ h2 {
     height: 44rem;
   }
 
-  h1 {
+  .title {
     font-size: 40px;
     padding-top: 3rem;
   }
 
-  h2 {
+  .author {
     padding-top: 2rem;
     font-size: 30px;
     font-weight: bold;
@@ -135,12 +141,12 @@ h2 {
     height: 56rem;
   }
 
-  h1 {
+  .title {
     font-size: 64px;
     padding-top: 4rem;
   }
 
-  h2 {
+  .author {
     padding-top: 2rem;
     font-size: 50px;
     font-weight: bold;

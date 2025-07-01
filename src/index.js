@@ -5,6 +5,8 @@ import {books} from './books'
 import Book from './book'
 
 const BookList = () => (
+  <>
+  <h1 className='heading'>amazon best sellers</h1>
   <section className="booklist">
     {books.map((book) => {
       return (
@@ -14,6 +16,7 @@ const BookList = () => (
       );
     })}
   </section>
+  </>
 );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

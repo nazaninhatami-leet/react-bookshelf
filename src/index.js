@@ -9,7 +9,7 @@ const BookList = () => (
     {books.map((book) => {
       return (
         <Book {...book} key={book.id}>
-          <p style={{ color: 'red', marginTop: '50px', padding:'6px', backgroundColor:'#eee', width:'40%', borderRadius:'4px', fontWeight:'bold'}}>25% off</p>
+          <p style={{ color: '#eee', marginTop: '50px', padding:'8px', backgroundColor:'#ff4545', width:'40%', borderRadius:'4px', fontWeight:'bold'}}>25% OFF</p>
         </Book>
       );
     })}

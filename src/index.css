@@ -10,7 +10,7 @@ body {
 }
 
 .booklist {
-  background-color: #333;
+  background-color: #503838;
   width: 80%;
   margin: 4.5rem auto;
   padding: 3rem 2rem;
@@ -32,11 +32,22 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   overflow: auto;
+  position: relative;
+}
+
+.index {
+  background-color: #b35a5a;
+  padding: 0.6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3rem;
+  border-bottom-right-radius: 4px;
 }
 
 .book img {
-  width: 100%;
   max-width: 20rem;
+  height: 11rem;
 }
 
 h1 {
